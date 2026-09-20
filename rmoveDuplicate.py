@@ -2,7 +2,7 @@ class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
         stack = []
         seen = set()
-        last_occurrence = {c: i for i, c in enumerate(s)}
+        last_occurrence = {c: i for i, c in enumerate(s)}### last occurrence of character in s
 
         for i, c in enumerate(s):
             if c not in seen:
